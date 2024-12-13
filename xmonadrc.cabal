@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           xmonadrc
+version:        0.16
+synopsis:       My xmonad configuration.
+homepage:       eliaspeschke.xyz
+author:         Unheil
+maintainer:     eliaspeschke@googlemail.com
+license:        None
+build-type:     Simple
+
+executable xmonadrc
+  main-is: xmonad.hs
+  other-modules:
+      Paths_xmonadrc
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -O2
+  build-depends:
+      X11
+    , X11-xft
+    , base
+    , containers
+    , directory
+    , unix
+    , utf8-string
+    , xmonad
+    , xmonad-contrib
+  default-language: Haskell2010

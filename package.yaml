@@ -1,0 +1,32 @@
+name:                xmonadrc
+version:             0.16
+synopsis:            My xmonad configuration.
+license:             None
+author:              Unheil 
+maintainer:          eliaspeschke@googlemail.com
+homepage:            eliaspeschke.xyz
+
+ghc-options:
+  -Wall
+  -Wcompat
+  -Wincomplete-record-updates
+  -Wincomplete-uni-patterns
+  -Wredundant-constraints
+  -O2
+
+dependencies:
+  - base
+  - containers
+  - unix
+  - xmonad
+  - xmonad-contrib
+  - X11
+  - X11-xft
+  - utf8-string
+  - directory
+
+executables:
+  xmonadrc:
+    source-dirs: src
+    main: xmonad.hs
+
